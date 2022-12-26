@@ -2,3 +2,6 @@
 
 /config/db.js
 /config/default.json
+
+.env
+node_modules
