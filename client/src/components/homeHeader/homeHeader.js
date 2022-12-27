@@ -11,7 +11,7 @@ function Header(props) {
     <div className={styles.header}>
       <div className={styles.navitems}>
         <div className={styles.logo}>
-          <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+          <Link to="/" style={{ textDecoration: "none", color: "black" }}>
             {" "}
             HOME{" "}
           </Link>
@@ -19,13 +19,13 @@ function Header(props) {
         <div className={styles.navlinks2}>
           {location.pathname === "/login" ||
           location.pathname === "/register" ? (
-            <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+            <Link to="/" style={{ textDecoration: "none", color: "black" }}>
               Take Test
             </Link>
           ) : (
             <Link
               to="/login"
-              style={{ textDecoration: "none", color: "white" }}
+              style={{ textDecoration: "none", color: "black" }}
             >
               Register/Login
             </Link>

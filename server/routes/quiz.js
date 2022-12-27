@@ -31,7 +31,6 @@ router.route("/").post(async (req, res) => {
       .send({ message: "Couldn't fetch quiz details. Try again!" });
 });
 
-if(questions.data.pin < 1 || questions.data.pin > 10) {
     router.route("/submitquiz").post(async (req, res) => {
     const score = parseInt(req.body.score);
     const email = req.body.email.toLowerCase();
@@ -44,7 +43,7 @@ if(questions.data.pin < 1 || questions.data.pin > 10) {
         .then(() => res.send("result added!"))
         .catch((err) => res.status(400).json("error : " + err));
     });
-}
+
 
 router.use("/getquiz", verify);
 router.use("/getresults", verify);

@@ -30,7 +30,7 @@ function App() {
       <main>
         <Routes>
           <Route exact path="/" element={<Taketest />} />
-          <Route exact path="/login" element={<Login setloggedin={setloggedin}/>} />
+          <Route exact path="/login" element={<Login />} />
           <Route exact path="/register" element={<Register />} />
           <Route exact path="/dashboard" element={<Dashboard />} />
           <Route exact path="/abouttest" element={<Testresult />} />
@@ -39,22 +39,6 @@ function App() {
         </Routes>
       </main>
     </React.Fragment>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Quiz Application
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Quiz Application
-    //     </a>
-    //   </header>
-    // </div>
   );
 }
 

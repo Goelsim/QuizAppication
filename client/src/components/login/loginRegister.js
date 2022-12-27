@@ -10,6 +10,8 @@ function LoginRegister(props) {
   return (
     <div className={styles.container}>
       <Login {...props} />
+      <br></br>
+      OR
       <Register />
     </div>
   );
